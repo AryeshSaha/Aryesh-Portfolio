@@ -1,0 +1,112 @@
+
+/* ! Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgcB4);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--antiqwhite);
+}
+
+#home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('../../images/joan-gamell-XmZ4GDAp9G0-unsplash.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+hr{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: antiquewhite;
+}
+
+.main{
+    /* border: 5px solid white; */
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    /* top: 30%; */
+    top: -30%;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.greet{
+    font-family: 'Comforter Brush', cursive;
+    text-transform: uppercase;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 27px;
+}
+
+.cv-dwnld{
+    margin-top: 300px;
+    width: 100%;
+    padding-left: 200px;
+    /* border: 2px solid white; */
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 2px solid var(--antiqwhite);
+    color: var(--antiqwhite);
+    outline: none;
+    transition: .6s ease;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--antiqwhite);
+    color: var(--Black);
+    scale: 1.02;
+    box-shadow: 1px 1px 25px var(--antiqwhite);
+    border: none;
+    font-weight: bold;
+}
+
+
+.Typewriter__wrapper {
+    font-size: 4rem !important;
+    font-weight: 600 !important;
+    color: var(--antiqwhite);
+}
+
+.Typewriter__cursor {
+    font-size: 4rem !important;
+    color: var(--antiqwhite);
+}
+
+@media (max-width: 767px) {
+    .Typewriter__wrapper {
+        font-size: 1.4rem !important;
+        font-weight: 800 !important;
+        /* position: absolute !important; */
+    }
+
+    .Typewriter__cursor {
+        display: none !important;
+    }
+
+    .cv-dwnld{
+        padding-left: 100px;
+    }
+}

@@ -1,0 +1,52 @@
+import React, { useEffect, useState } from "react";
+import "./Home.css";
+import CV from "../../CV/CV.pdf";
+import Typewriter from "typewriter-effect";
+import HashLoader from "react-spinners/HashLoader";
+
+export const Home = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+  return (
+    <div>
+      {loading ? (
+        <div className="loader">
+          <HashLoader color="#DC143C" size={60} loading={loading} />
+        </div>
+      ) : (
+        <div className="home-sec">
+          <section id="home">
+            <div className="main">
+              <h1 className="greet">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "hi!",
+                      "i'm aryesh",
+                      "Front-end Web Developer",
+                      "how you doin'?",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
+              </h1>
+            </div>
+            <div className="cv-dwnld">
+              <a href={CV} download={CV} className="download">
+                <button className="btn">here's my cv</button>
+              </a>
+            </div>
+          </section>
+        </div>
+      )}
+    </div>
+  );
+};

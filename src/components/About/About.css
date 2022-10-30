@@ -1,0 +1,93 @@
+/* ! About Section */
+.about-sec {
+  overflow: hidden;
+}
+#intro {
+  display: flex;
+  background-color: var(--Black);
+  color: var(--antiqwhite);
+  text-align: justify;
+  /* border: 2px solid yellow; */
+  margin: 1.8rem;
+  /* height: 100vh; */
+}
+
+.img img{
+  height: 480px;
+  /* padding: 10px 50px; */
+  margin: 30px 50px;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+p {
+  /* border: 2px solid white; */
+  font-family: century;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  margin: 0px 10px 25px 0px;
+}
+
+.about-me {
+  font-size: 2rem;
+  font-family: century;
+
+  text-transform: uppercase;
+}
+
+.mini-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  text-transform: capitalize;
+  /* margin: 20px 0px 10px; */
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 0px 45px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: var(--antiqwhite);
+  cursor: pointer;
+}
+
+h4:hover {
+  color: rgb(250, 100, 100);
+}
+
+span {
+  color: rgb(179, 85, 112);
+  font-size: 1.05rem;
+}
+
+.contents {
+  /* border: 2px solid salmon; */
+  margin: 0px 15px;
+}
+
+li {
+  padding: 4px 0px;
+}
+
+@media (max-width: 768px) {
+
+  #pic, #intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    display: block;
+    padding: 10px 25px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 20px 7px;
+    margin-left: 35px;
+  }
+}

@@ -1,0 +1,87 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: var(--antiqwhite);
+    background: url('../../images/contactme.jpg') no-repeat center center/cover;
+    opacity: .8;
+    height: 100vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 20px 0px;
+    padding: 15px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 60%;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--antiqwhite);
+    outline: none;
+    background-color: transparent;
+    color: var(--antiqwhite);
+}
+
+.input::placeholder, #msg::placeholder{
+    color: var(--antiqwhite);
+}
+
+#msg{
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    font-size: .85rem;
+    border: 1px solid var(--antiqwhite);
+    outline: none;
+    background-color: transparent;
+    caret-color: antiquewhite;
+    color: var(--antiqwhite);
+}
+
+#send{
+    padding: 10px;
+    width: 25%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--antiqwhite);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#send:hover{
+    background-color: var(--antiqwhite);
+    color:var(--Black);
+    box-shadow: 0 0 10px var(--antiqwhite);
+}
+
+@media (max-width: 767px) {
+    #contact{
+        display: block;
+        height: 780px;
+    }
+
+    form{
+        max-width: 100%;
+    }
+
+    .input, #msg, #send{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    #msg{
+        height: 200px;
+    }
+}

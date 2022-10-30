@@ -1,0 +1,58 @@
+
+.myWork{
+    background-color: var(--Black);
+    height: 100%;
+    padding: 0px 40px 40px;
+}
+
+h3{
+    /* border: 2px solid red; */
+    font-size: 1.8rem;
+    font-family: century;
+    margin: 50px 10px;
+    color: var(--antiqwhite);
+}
+
+.package{
+    margin: 0px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+    color: var(--antiqwhite);
+    justify-content: space-evenly;
+}
+
+.content{
+    /* border: 2px solid white; */
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+.card {
+    background-color: black !important;
+}
+
+.card img{
+    border-radius: 15px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 18rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card p{
+        width: 18rem !important;
+    }
+}
