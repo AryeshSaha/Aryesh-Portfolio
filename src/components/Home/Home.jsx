@@ -29,12 +29,14 @@ export const Home = () => {
                     strings: [
                       "hi!",
                       "i'm aryesh",
+                      "and i'm a",
                       "Front-end Web Developer",
-                      "how you doin'?",
+                      "how are you doin'?",
                     ],
+                    delay: 100,
                     autoStart: true,
                     loop: true,
-                    deleteSpeed: 50,
+                    deleteSpeed: 40,
                   }}
                 />
               </h1>

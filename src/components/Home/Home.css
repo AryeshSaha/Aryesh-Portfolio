@@ -91,19 +91,20 @@ a{
 }
 
 .Typewriter__cursor {
-    font-size: 4rem !important;
+    font-size: 7rem !important;
     color: var(--antiqwhite);
 }
 
 @media (max-width: 767px) {
     .Typewriter__wrapper {
-        font-size: 1.4rem !important;
+        font-size: 2rem !important;
         font-weight: 800 !important;
         /* position: absolute !important; */
     }
 
     .Typewriter__cursor {
         display: none !important;
+        font-size: 4rem !important;
     }
 
     .cv-dwnld{
