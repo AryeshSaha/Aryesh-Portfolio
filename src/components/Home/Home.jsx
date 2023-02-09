@@ -11,7 +11,7 @@ export const Home = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 4000);
   }, []);
   return (
     <div>
@@ -23,6 +23,7 @@ export const Home = () => {
         <div className="home-sec">
           <section id="home">
             <div className="main">
+              {/* <h1 className="myname">Hi! I'm Aryesh</h1> */}
               <h1 className="greet">
                 <Typewriter
                   options={{
